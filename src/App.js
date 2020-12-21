@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import {BounceLoader, BarLoaBarLoader, BeatLoader, BarLoader} from 'react-spinners'
+import { SpinnerRoundFilled,SpinnerCircular, SpinnerDotted,SpinnerInfinity,SpinnerDiamond,SpinnerRoundOutlined,SpinnerRound } from 'spinners-react';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BeatLoader color='blue' size={18}/>
+      <BounceLoader color='green' size={50}/>
+      <BarLoader color='gray' />
+      <SpinnerCircular/>
+      <SpinnerDotted/>
+      <SpinnerInfinity/>
+      <SpinnerDiamond/>
+      <SpinnerRoundOutlined/>
+      <SpinnerRound/>
+      <SpinnerRoundFilled/>
     </div>
   );
 }
